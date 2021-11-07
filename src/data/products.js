@@ -2,7 +2,7 @@ const produtcs = [
   {
     id: 1,
     title: 'Marble Cake',
-    img: '/assets/img/Globe/Angkor_Wat.jpg',
+    img: '/assets/img/products/marble-cake-thumb.jpg',
     category: 'Cakes',
     createDate: '02.04.2018',
     status: 'ON HOLD',
@@ -15,7 +15,7 @@ const produtcs = [
     id: 2,
     title: 'Fat Rascal',
     category: 'Cupcakes',
-    img: '/assets/img/Globe/Ile-de-Paques-1080x675.jpg',
+    img: '/assets/img/products/fat-rascal-thumb.jpg',
     createDate: '01.04.2018',
     status: 'PROCESSED',
     statusColor: 'secondary',
@@ -26,7 +26,7 @@ const produtcs = [
   {
     id: 3,
     title: 'Chocolate Cake',
-    img: '/assets/img/Globe/khajuraho.jpg',
+    img: '/assets/img/products/chocolate-cake-thumb.jpg',
     category: 'Cakes',
     createDate: '25.03.2018',
     status: 'PROCESSED',
@@ -38,7 +38,7 @@ const produtcs = [
   {
     id: 4,
     title: 'Goose Breast',
-    img: '/assets/img/Globe/machu pichu.jpg',
+    img: '/assets/img/products/goose-breast-thumb.jpg',
     category: 'Cakes',
     createDate: '21.03.2018',
     status: 'PROCESSED',
@@ -51,7 +51,7 @@ const produtcs = [
     id: 5,
     title: 'Petit Gâteau',
     category: 'Cupcakes',
-    img: '/assets/img/Globe/mohenjodaro.jpg',
+    img: '/assets/img/products/petit-gateau-thumb.jpg',
     createDate: '02.06.2018',
     status: 'ON HOLD',
     statusColor: 'primary',
@@ -62,7 +62,7 @@ const produtcs = [
   {
     id: 6,
     title: 'Salzburger Nockerl',
-    img: '/assets/img/Globe/nasca.jpg',
+    img: '/assets/img/products/salzburger-nockerl-thumb.jpg',
     category: 'Desserts',
     createDate: '14.07.2018',
     status: 'PROCESSED',
@@ -74,7 +74,7 @@ const produtcs = [
   {
     id: 7,
     title: 'Napoleonshat',
-    img: '/assets/img/Globe/ollantaytambo.jpg',
+    img: '/assets/img/products/napoleonshat-thumb.jpg',
     category: 'Desserts',
     createDate: '05.02.2018',
     status: 'PROCESSED',
@@ -86,7 +86,7 @@ const produtcs = [
   {
     id: 8,
     title: 'Cheesecake',
-    img: '/assets/img/Globe/paracas.jpg',
+    img: '/assets/img/products/cheesecake-thumb.jpg',
     category: 'Cakes',
     createDate: '18.08.2018',
     status: 'ON HOLD',
@@ -98,7 +98,7 @@ const produtcs = [
   {
     id: 9,
     title: 'Financier',
-    img: '/assets/img/Globe/paratoari.jpg',
+    img: '/assets/img/products/financier-thumb.jpg',
     category: 'Cakes',
     createDate: '15.03.2018',
     status: 'ON HOLD',
@@ -111,7 +111,7 @@ const produtcs = [
   {
     id: 10,
     title: 'Genoise',
-    img: '/assets/img/Globe/pay-dagon.JPG',
+    img: '/assets/img/products/genoise-thumb.jpg',
     category: 'Cupcakes',
     createDate: '11.06.2018',
     status: 'PROCESSED',
@@ -123,7 +123,7 @@ const produtcs = [
   {
     id: 11,
     title: 'Gingerbread',
-    img: '/assets/img/Globe/Persepolis.jpg',
+    img: '/assets/img/products/gingerbread-thumb.jpg',
     category: 'Cakes',
     createDate: '10.04.2018',
     status: 'ON HOLD',
@@ -135,7 +135,7 @@ const produtcs = [
   {
     id: 12,
     title: 'Magdalena',
-    img: '/assets/img/Globe/petra.jfif',
+    img: '/assets/img/products/magdalena-thumb.jpg',
     category: 'Cakes',
     createDate: '22.07.2018',
     status: 'PROCESSED',
@@ -147,7 +147,7 @@ const produtcs = [
   {
     id: 13,
     title: 'Parkin',
-    img: '/assets/img/Globe/preah vihear.jpg',
+    img: '/assets/img/products/parkin-thumb.jpg',
     category: 'Cakes',
     createDate: '22.08.2018',
     status: 'ON HOLD',
@@ -160,7 +160,7 @@ const produtcs = [
   {
     id: 14,
     title: 'Streuselkuchen',
-    img: '/assets/img/Globe/pyay1.jfif',
+    img: '/assets/img/products/streuselkuchen-thumb.jpg',
     category: 'Cakes',
     createDate: '22.07.2018',
     status: 'PROCESSED',
@@ -172,7 +172,7 @@ const produtcs = [
   {
     id: 15,
     title: 'Tea loaf',
-    img: '/assets/img/Globe/pyramide.jpg',
+    img: '/assets/img/products/tea-loaf-thumb.jpg',
     category: 'Cakes',
     createDate: '10.09.2018',
     status: 'ON HOLD',
@@ -184,7 +184,7 @@ const produtcs = [
   {
     id: 16,
     title: 'Merveilleux',
-    img: '/assets/img/Globe/siwa.jpg',
+    img: '/assets/img/products/merveilleux-thumb.jpg',
     category: 'Cakes',
     createDate: '18.02.2018',
     status: 'ON HOLD',
@@ -196,7 +196,7 @@ const produtcs = [
   {
     id: 17,
     title: 'Fruitcake',
-    img: '/assets/img/Globe/Sukhothai.jpg',
+    img: '/assets/img/products/fruitcake-thumb.jpg',
     category: 'Cakes',
     createDate: '12.01.2019',
     status: 'PROCESSED',
@@ -208,7 +208,7 @@ const produtcs = [
   {
     id: 18,
     title: 'Bebinca',
-    img: '/assets/img/Globe/Tassili_nAjjer_Landsat.jpg',
+    img: '/assets/img/products/bebinca-thumb.jpg',
     category: 'Cakes',
     createDate: '04.02.2019',
     status: 'PROCESSED',
@@ -220,7 +220,7 @@ const produtcs = [
   {
     id: 19,
     title: 'Cremeschnitte',
-    img: '/assets/img/Globe/ur.jpg',
+    img: '/assets/img/products/cremeschnitte-thumb.jpg',
     category: 'Desserts',
     createDate: '04.03.2018',
     status: 'ON HOLD',
@@ -229,7 +229,18 @@ const produtcs = [
     sales: 562,
     stock: 9
   },
- 
+  {
+    id: 20,
+    title: 'Soufflé',
+    img: '/assets/img/products/souffle-thumb.jpg',
+    category: 'Cupcakes',
+    createDate: '16.01.2018',
+    status: 'ON HOLD',
+    statusColor: 'primary',
+    description: 'Wedding cake with flowers Macarons and blueberries',
+    sales: 524,
+    stock: 14
+  }
 ]
 
 export default produtcs

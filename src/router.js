@@ -23,16 +23,115 @@ const routes = [
    */
     children: [
       {
+        path: "single",
+        component: () =>
+          import(/* webpackChunkName: "single" */ "./views/app/single")
+      } , 
+
+      {
         path: "piaf",
         component: () =>
           import(/* webpackChunkName: "piaf" */ "./views/app/piaf"),
-        redirect: `${adminRoot}/piaf/start`,
+        redirect: `${adminRoot}/piaf/PointA`,
         children: [
+           
+
           {
-            path: 'start',
-            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Start')
+            path: 'PointA',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/PointA')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point1',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point1')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point2',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point2')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point3',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point3')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point4',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point4')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point5',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point5')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point6',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point6')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point7',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point7')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point8',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point8')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point9',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point9')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point10',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point10')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point11',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point11')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point12',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point12')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point13',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point13')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point14',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point14')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point15',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point15')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point16',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point16')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point17',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point17')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point18',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point18')
             // meta: { roles: [UserRole.Admin, UserRole.Editor] },
           }
+
         ]
       },
       {
@@ -47,11 +146,7 @@ const routes = [
 
 
        
-    {
-        path: "single",
-        component: () =>
-          import(/* webpackChunkName: "single" */ "./views/app/single")
-      }
+     
     ]
   },
   {

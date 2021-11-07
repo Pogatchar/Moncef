@@ -77,54 +77,54 @@ export const items = [
   export const detailImages = [
     {
       id: "large1",
-      img: "/assets/img/Globe/pyramide.jpg"
+      img: "/assets/img/products/parkin.jpg"
     },
     {
       id: "large2",
-      img: "/assets/img/Globe/Ile-de-Paques-1080x675.jpg"
+      img: "/assets/img/products/napoleonshat.jpg"
     },
     {
       id: "large3",
-      img: "/assets/img/Globe/petra.jfif"
+      img: "/assets/img/products/marble-cake.jpg"
     },
     {
       id: "large4",
-      img: "/assets/img/Globe/Persepolis.jpg"
+      img: "/assets/img/products/fruitcake.jpg"
     },
     {
       id: "large5",
-      img: "/assets/img/Globe/Sukhothai.jpg"
+      img: "/assets/img/products/magdalena.jpg"
     },
     {
       id: "large6",
-      img: "/assets/img/Globe/machu pichu.jpg"
+      img: "/assets/img/products/tea-loaf.jpg"
     }
   ]
   
   export const detailThumbs = [
     {
       id: "thumb1",
-      img: "/assets/img/Globe/pyramide.jpg"
+      img: "/assets/img/products/parkin-thumb.jpg"
     },
     {
       id: "thumb2",
-      img: "/assets/img/Globe/Ile-de-Paques-1080x675.jpg"
+      img: "/assets/img/products/napoleonshat-thumb.jpg"
     },
     {
       id: "thumb3",
-      img: "/assets/img/Globe/petra.jfif"
+      img: "/assets/img/products/marble-cake-thumb.jpg"
     },
     {
       id: "thumb4",
-      img: "/assets/img/Globe/Persepolis.jpg"
+      img: "/assets/img/products/fruitcake-thumb.jpg"
     },
     {
       id: "thumb5",
-      img: "/assets/img/Globe/Sukhothai.jpg"
+      img: "/assets/img/products/magdalena-thumb.jpg"
     },
     {
       id: "thumb6",
-      img: "/assets/img/Globe/machu pichu.jpg"
+      img: "/assets/img/products/tea-loaf-thumb.jpg"
     }
   ]
   
