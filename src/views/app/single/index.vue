@@ -15,8 +15,7 @@
               <i class="simple-icon-pencil" />
             </b-button>
           </div>
-          // ceci est une capture d'écran de ce qui va être ici ( animation vue js ) 
-          // https://github.com/Pogatchar/LandingGlobe
+          
           <img
             src="/assets/img/Globe/Linkedin.png"
             alt="Detail"
