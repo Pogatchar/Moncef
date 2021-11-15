@@ -82,7 +82,7 @@
                 <router-link class="page-link" to="/app/piaf/Point8"> 8 </router-link>
               </li>
                <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 9 </a>  </li>
-              <li class="page-item"><a>class="page-link"...</a></li>
+              <li class="page-item"><a class="page-link"> ...</a></li>
               <li class="page-item">
                <router-link class="page-link" to="/app/piaf/Point10"> Suivant </router-link>
               </li>

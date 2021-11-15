@@ -66,19 +66,19 @@
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
                 <li class="page-item">
-                <router-link class="page-link" to="/app/piaf/Point4"> Précédent </router-link>
+                <router-link class="page-link" to="/app/piaf/Point7"> Précédent </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <router-link class="page-link" to="/app/piaf/Point4"> 7 </router-link>
+                <router-link class="page-link" to="/app/piaf/Point7"> 7 </router-link>
               </li>
                <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 8 </a>  </li>
               <li class="page-item">
-                <router-link class="page-link" to="/app/piaf/Point4"> 9 </router-link>
+                <router-link class="page-link" to="/app/piaf/Point9"> 9 </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-               <router-link class="page-link" to="/app/piaf/Point4"> Suivant </router-link>
+               <router-link class="page-link" to="/app/piaf/Point9"> Suivant </router-link>
               </li>
             </ul>
           </nav>
