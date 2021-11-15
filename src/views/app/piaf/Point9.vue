@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/pyramide.jpg"
+            src="/assets/img/Globe/siwa.jpg"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,26 +18,27 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Les pyramides de Gizeh, aussi appelées complexe pyramidal de
-              Gizeh, sont l'ensemble des pyramides égyptiennes situées dans la
-              nécropole de Gizeh sur le plateau de Gizeh. Ce complexe pyramidal
-              égyptien est classé au patrimoine mondial de l'humanité depuis
-              1979.
+              Le temple d'Amon situé à Siwa se dresse au nord-ouest du rocher
+              d'Aghourmi, l'antique capitale de l'oasis. Son oracle a joué un
+              rôle fondamental dans la conquête de l'Égypte par Alexandre le
+              Grand, qui se rendit à Siwa afin de faire légitimer son pouvoir et
+              son règne en Égypte par l'oracle d'Amon.
               <br />
-              <br />La pyramide de Khéops ou grande pyramide de Gizeh est un
-              monument construit par les Égyptiens de l'Antiquité, formant une
-              pyramide à base carrée. Tombeau présumé du pharaon Khéops, elle
-              fut édifiée il y a plus de 4 500 ans, sous la IVe dynastie1, au
-              centre du complexe funéraire de Khéops se situant à Gizeh en
-              Égypte. Elle est la plus grande des pyramides de Gizeh.
-              <br />
-
-              Ce monument forme une pyramide à base carrée de 440 coudées
-              royales anciennes, soit environ 230,5 mètres. Les valeurs
-              empiriques d'aujourd'hui sont : au sud de 230,384 m, au nord
-              230,329 m, à l'ouest 230,407 m, à l'est 230,334 m, soit une erreur
-              pour obtenir un carré parfait de seulement 12 secondes d'arc sur
-              l'angle formé par ses diagonales2.
+              <br />Le sanctuaire se situe aux croisements de différentes
+              cultures, notamment Cyrène, l'Égypte et le monde méditerranéen.
+              C'est pourquoi l'identité de la divinité honorée originellement à
+              Siwa est difficile à cerner. Il s'agit probablement d'une variante
+              libyenne d'Amon, honoré dans l'oasis sous forme criocéphale1. Lors
+              de la mainmise des Égyptiens sur l'oasis, ils interprétèrent la
+              divinité comme un variante locale de leur Amon de Thèbes, qui
+              pouvait effectivement être représenté sous forme criocéphale. Dans
+              une stratégie d'expansion vers la mer Méditerranée, la dynastie
+              saïte procède aux aménagements et aux agrandissement d'un temple,
+              probablement déjà construit par des dynastes libyens. Ahmôsis II
+              est probablement le pharaon à l'origine de la construction du
+              temple à la Basse époque. Malgré la destruction, en 1970, des
+              maisons qui le dissimulaient, ce qui reste du temple d'Amon ne
+              permet guère d'imaginer sa splendeur passée.
             </p>
 
             <div class="mb-3">
@@ -46,6 +47,7 @@
           </b-card-body>
         </b-card>
       </b-colxx>
+
       <b-colxx xxs="12" xl="6" class="col-right">
         <b-card :title="$t('maps.yandex')" class="mb-4">
           <yandex-map
@@ -69,36 +71,20 @@
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point8"
-                  >Précédent</a
-                >
-              </li>
-              <li class="page-item"><a class="page-link">...</a></li>
-              <li class="page-item"><a class="page-link">9</a></li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point10"
-                  >10</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point11"
-                  >11</a
-                >
+                <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point8"> Précédent </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point10"
-                  >Suivant</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point7"> 7 </router-link>
+              </li>
+              <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point8"> 8 </router-link>
+              </li>
+               <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 9 </a>  </li>
+              <li class="page-item"><a>class="page-link"...</a></li>
+              <li class="page-item">
+               <router-link class="page-link" to="/app/piaf/Point10"> Suivant </router-link>
               </li>
             </ul>
           </nav>
@@ -107,6 +93,7 @@
     </b-row>
   </div>
 </template>
+
 
 
 <script>
@@ -124,11 +111,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [29.9870753, 31.2118063],
-      center: { lat: 29.9870753, lng: 31.2118063 },
+      coords: [29.2034664, 25.5192273],
+      center: { lat: 29.2034664, lng: 25.5192273 },
       markers: [
         {
-          position: { lat: 29.9870753, lng: 31.2118063 },
+          position: { lat: 29.2034664, lng: 25.5192273 },
         },
       ],
     };
@@ -136,7 +123,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Gizeh</h1>
+        <h1 class="red">Siwa</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },
@@ -148,4 +135,5 @@ export default {
   },
 };
 </script>
+
 

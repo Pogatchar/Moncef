@@ -36,11 +36,7 @@ const routes = [
         children: [
            
 
-          {
-            path: 'PointA',
-            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/PointA')
-            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
-          },
+          
           {
             path: 'Point1',
             component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point1')
@@ -129,6 +125,11 @@ const routes = [
           {
             path: 'Point18',
             component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point18')
+            // meta: { roles: [UserRole.Admin, UserRole.Editor] },
+          },
+          {
+            path: 'Point19',
+            component: () => import(/* webpackChunkName: "piaf" */ './views/app/piaf/Point19')
             // meta: { roles: [UserRole.Admin, UserRole.Editor] },
           }
 

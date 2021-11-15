@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/preah vihear.jpg"
+            src="/assets/img/Globe/Angkor_Wat.jpg"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,27 +18,28 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Le temple de Preah Vihear, (en Khmer : « ប្រាសាទព្រះវិហារ »,
-              Prasat Preah Vihea) est un temple du Cambodge érigé durant
-              l'Empire khmer au sommet d'une colline des Monts Dângrêk, à plus
-              de 500 mètres d'altitude. Dédié au dieu hindou Shiva, et
-              aujourd'hui temple bouddhiste, il se compose d'une série de
-              sanctuaires reliés par un système de chaussées et d'escaliers
-              s’étendant sur un axe nord-sud de 800 mètres. Le temple actuel
-              date de la première moitié du xie siècle, bien que le site ait été
-              occupé par un ermitage dès le ixe siècle.
+              Angkor Vat ou Angkor Wat (en khmer : ប្រាសាទអង្គរវត្ត, Prasat
+              Angkor Vat) est le plus grand des temples et le plus grand
+              monument religieux au monde1. Il fait partie du complexe
+              monumental d'Angkor au Cambodge réparti sur un site de 162,6
+              hectares2 . Il fut construit par le roi khmer Suryavarman II au
+              début du xiie siècle à Yaśodharapura (Angkor actuel) capitale de
+              l'empire khmer en tant que « temple d'État » et éventuel mausolée.
+              Temple le mieux préservé d'Angkor, l'une des plus grandes villes
+              médiévales du monde, il est le seul à être resté un important
+              centre religieux depuis sa fondation, initialement hindou et dédié
+              au dieu Vishnou pour l'empire khmer rompant avec la tradition
+              Shaiva des rois précédents. Il a progressivement été transformé en
+              temple bouddhiste vers la fin du xiie siècle.
 
               <br />
-              <br />Le site est inscrit sur la liste du patrimoine mondial de
-              l’UNESCO le 7 juillet 2008 pour son « architecture, adaptée à la
-              fois aux contraintes naturelles du site et aux fonctions
-              religieuses du temple, ainsi que pour la qualité des
-              ornementations de pierre sculptée. »1. L'UNESCO considère ce
-              temple comme ayant "une valeur universelle exceptionnelle" et lui
-              attribue ainsi le critère suivant : « Critère (i) : Preah Vihear
-              est un chef-d’œuvre remarquable de l’architecture khmère. Il est
-              très « pur » dans sa configuration comme dans la finesse de ses
-              décors. »
+              <br />Le temple est l'archétype du style classique de
+              l'architecture khmère. Il est devenu le symbole du Cambodge et
+              figure sur son drapeau national. Il est le principal lieu
+              touristique du pays. Angkor Vat combine deux bases de
+              l'architecture khmère pour les temples : le côté temple-montagne
+              et le côté temple à galeries. Il est conçu pour représenter le
+              mont Meru, la maison des dieux dans la mythologie hindoue.
             </p>
 
             <div class="mb-3">
@@ -54,7 +55,7 @@
             @click="onClick"
             zoom="2"
             class="map-item"
-            map-type="map"
+            map-type="satellite"
           >
             <ymap-marker
               marker-id="123"
@@ -65,43 +66,24 @@
         </b-card>
       </b-colxx>
     </b-row>
-
     <b-row>
       <b-colxx xxs="12">
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point16"
-                  >Précédent</a
-                >
+               <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point17"> Précédent </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point15"
-                  >16</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point17"> 17 </router-link>
+              </li>
+               <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 18 </a>  </li>
+              <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point19"> 19 </router-link>
               </li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point16"
-                  >17</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point18"
-                  >18</a
-                >
-              </li>
-              <li class="page-item disabled">
-                <a class="page-link">Suivant</a>
+               <router-link class="page-link" to="/app/piaf/Point19"> Suivant </router-link>
               </li>
             </ul>
           </nav>
@@ -111,25 +93,27 @@
   </div>
 </template>
 
+
 <script>
 import vue from "vue";
 import ymapPlugin from "vue-yandex-maps";
 
 const yandexOptions = {
   apiKey: "", // '' by default
-  lang: "fr-fr", // 'ru_RU' by default
+  lang: "en-US", // 'ru_RU' by default
   version: "2.1", // '2.1' by default
 };
 
 vue.use(ymapPlugin, yandexOptions);
+
 export default {
   data() {
     return {
-      coords: [13.7462982, 104.97403],
-      center: { lat: 13.7462982, lng: 104.97403 },
+      coords: [13.4124413, 103.866584],
+      center: { lat: 13.4124413, lng: 103.866584 },
       markers: [
         {
-          position: { lat: 13.7462982, lng: 104.97403 },
+          position: { lat: 13.4124413, lng: 103.866584 },
         },
       ],
     };
@@ -137,7 +121,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Preah Vihear, Cambodge</h1>
+        <h1 class="red">Angkor Vat</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },

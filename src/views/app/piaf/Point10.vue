@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/petra.jfif"
+            src="/assets/img/Globe/pyramide.jpg"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,26 +18,26 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Pétra (de πέτρα petra, « rocher » en grec ancien (البتراء
-              Al-Butrāʾ en arabe) est une cité nabatéenne située au sud de
-              l'actuelle Jordanie. C'est le pôle touristique majeur de ce pays.
-              Fondée vers la fin du viiie siècle av. J.-C., par les Édomites,
-              elle est ensuite occupée vers le vie siècle av. J.-C. par les
-              Nabatéens qui la font prospérer grâce à sa position sur la route
-              des caravanes transportant l'encens, les épices et d'autres
-              produits précieux entre l'Arabie du Sud, l'Égypte, la Syrie et la
-              Méditerranée.
-
+              Les pyramides de Gizeh, aussi appelées complexe pyramidal de
+              Gizeh, sont l'ensemble des pyramides égyptiennes situées dans la
+              nécropole de Gizeh sur le plateau de Gizeh. Ce complexe pyramidal
+              égyptien est classé au patrimoine mondial de l'humanité depuis
+              1979.
               <br />
-              <br />Pétra est un site localisé dans un cirque rocheux structuré
-              par plusieurs failles creusées par des wadis, qui constituent les
-              principales voies de communication. L'axe principal est le wadi
-              Mousa, qui traverse le site d'est en ouest, d'abord dans la gorge
-              du Sîq (« le fossé ») située à l'est, dont l'entrée, précédée par
-              les « tombeaux Djinns », était surmontée d'une grande arche
-              aujourd'hui effondrée. Ce défilé, traversant le massif du Khubtha,
-              constituait la voie d'accès principale pour parvenir à Pétra, et
-              avait été dallé dans l'Antiquité6.
+              <br />La pyramide de Khéops ou grande pyramide de Gizeh est un
+              monument construit par les Égyptiens de l'Antiquité, formant une
+              pyramide à base carrée. Tombeau présumé du pharaon Khéops, elle
+              fut édifiée il y a plus de 4 500 ans, sous la IVe dynastie1, au
+              centre du complexe funéraire de Khéops se situant à Gizeh en
+              Égypte. Elle est la plus grande des pyramides de Gizeh.
+              <br />
+
+              Ce monument forme une pyramide à base carrée de 440 coudées
+              royales anciennes, soit environ 230,5 mètres. Les valeurs
+              empiriques d'aujourd'hui sont : au sud de 230,384 m, au nord
+              230,329 m, à l'ouest 230,407 m, à l'est 230,334 m, soit une erreur
+              pour obtenir un carré parfait de seulement 12 secondes d'arc sur
+              l'angle formé par ses diagonales2.
             </p>
 
             <div class="mb-3">
@@ -69,36 +69,20 @@
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
+               <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point9"> Précédent </router-link>
+              </li>
+              <li class="page-item"><a class="page-link">...</a></li>
+               <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 10 </a>  </li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point9"
-                  >Précédent</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point11"> 11 </router-link>
+              </li>
+              <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point12"> 12 </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point9"
-                  >9</a
-                >
-              </li>
-              <li class="page-item"><a class="page-link">10</a></li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point11"
-                  >11</a
-                >
-              </li>
-              <li class="page-item"><a class="page-link">...</a></li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point11"
-                  >Suivant</a
-                >
+               <router-link class="page-link" to="/app/piaf/Point11"> Suivant </router-link>
               </li>
             </ul>
           </nav>
@@ -124,11 +108,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [30.3497724, 35.3764846],
-      center: { lat: 30.3497724, lng: 35.3764846 },
+      coords: [29.9870753, 31.2118063],
+      center: { lat: 29.9870753, lng: 31.2118063 },
       markers: [
         {
-          position: { lat: 30.3497724, lng: 35.3764846 },
+          position: { lat: 29.9870753, lng: 31.2118063 },
         },
       ],
     };
@@ -136,7 +120,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Pétra</h1>
+        <h1 class="red">Gizeh</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },
@@ -148,5 +132,4 @@ export default {
   },
 };
 </script>
-
 

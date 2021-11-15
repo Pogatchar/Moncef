@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/pyay.png"
+            src="/assets/img/Globe/khajuraho.jpg"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,25 +18,33 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Pyay est l'une des nombreuses anciennes capitales de Birmanie,
-              Pyay (prononcé ‘Pyee’ et connu à l'époque coloniale sous le nom de
-              *Prome* est une ville riveraine calme de stupa Irrawaddy, environ
-              290 kilomètres au nord de Yangon. A quelques kilomètres de la
-              vieille ville de Prome se trouve le village de Hawmza, site de
-              l'ancienne capitale du royaume pyu de Sri Ksetra (viie au xie
-              siècle). La ville nouvelle fut fondée par les britanniques à la
-              fin du xixe siècle, pour servir de port fluvial intermédiaire
-              entre la Haute et la Basse Birmanie.
+              Khajurâho (hindi : खजुराहो, « Khadjouraho ») est un village du
+              Madhya Pradesh en Inde. Avant sa destruction, c'était l'une des
+              capitales de la dynastie des Chandela qui, entre le ixe et xie
+              siècles gouvernait un large royaume englobant presque la totalité
+              du Madhya-Pradesh. Site touristique très visité, sinon le plus
+              visité, de toute l'Inde. Il figure au patrimoine mondial de
+              l'UNESCO depuis 1986.
 
               <br />
-              <br />Ajouté à la liste du patrimoine mondial de l'UNESCO en 2014,
-              le site est centré sur les vestiges du palais royal et, même si il
-              n'y a pas beaucoup de vestiges de la ville d'origine, il y a un
-              certain nombre de tombes, des palais, des pagodes et autres sites
-              religieux à explorer - y compris la pagode énorme, cylindrique,
-              briques BawBawGyi, qui est dit être le plus ancien monument
-              bouddhiste en Birmanie; la pagode de la grotte Rahanta; le
-              monument Lay MyetHna; et le cimetière royal.
+              <br />Il compte encore 22 grands temples des xe et xie siècles qui
+              ont été très largement préservés des destructions les plus graves
+              au moment de la conquête islamique et au cours des siècles qui ont
+              suivi. La renommée de cet ensemble exceptionnel tient aussi à des
+              scènes de maithuna des couples d'amoureux et à une multitude
+              d'apsaras, êtres célestes ayant l'apparence de jolies femmes aux
+              formes généreuses et aux attitudes pleines de charme, qui couvrent
+              certaines parties des espaces dédiés à la sculpture figurative sur
+              les faces externes des grands temples et bien visibles de tous.
+              <br />
+              Ces temples sont célèbres pour les nombreuses scènes érotiques de
+              couples en pleine action, accompagnés et encadrés d'ailleurs,
+              chaque fois, par deux autres acteurs. Ces « tableaux » sont comme
+              noyés dans un immense « bandeau » de figures gracieuses, bandeau
+              qui couvre une grande partie des édifices, sur trois niveaux ou
+              trois registres. Une gracieuse souplesse anime les innombrables
+              figures qui semblent tapisser les murs, dès l'extérieur mais on
+              les trouve aussi à l'intérieur des temples.
             </p>
 
             <div class="mb-3">
@@ -68,37 +76,20 @@
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point14"
-                  >Précédent</a
-                >
+               <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point14"> Précédent </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
-              <li class="page-item"><a class="page-link">15</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point16"
-                  >16</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point13"> 13 </router-link>
               </li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point17"
-                  >17</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point14"> 14 </router-link>
               </li>
+               <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 15 </a>  </li>
               <li class="page-item"><a class="page-link">...</a></li>
-
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point16"
-                  >Suivant</a
-                >
+               <router-link class="page-link" to="/app/piaf/Point16"> Suivant </router-link>
               </li>
             </ul>
           </nav>
@@ -107,7 +98,6 @@
     </b-row>
   </div>
 </template>
-
 
 
 <script>
@@ -125,11 +115,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [18.816667, 95.216667],
-      center: { lat: 18.816667, lng: 95.216667 },
+      coords: [24.8515132, 79.9259786],
+      center: { lat: 24.8515132, lng: 79.9259786 },
       markers: [
         {
-          position: { lat: 18.816667, lng: 95.216667 },
+          position: { lat: 24.8515132, lng: 79.9259786 },
         },
       ],
     };
@@ -137,7 +127,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Pyay</h1>
+        <h1 class="red">Khajurâho</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },
@@ -149,3 +139,4 @@ export default {
   },
 };
 </script>
+

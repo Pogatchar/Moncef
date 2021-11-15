@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/ollantaytambo.jpg"
+            src="/assets/img/Globe/nasca.jpg"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,25 +18,22 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Ollantaytambo est une forteresse inca dont le nom signifie
-              l'auberge d'Ollantay, du nom d'un guerrier. Elle fut le siège de
-              combats acharnés entre Incas et Espagnols, Manco Inca s'y
-              réfugiant pour tenter de fédérer la résistance inca après la chute
-              de Cuzco.
-
-              <br />
-              Elle est située à 75 km au nord-ouest de Cuzco au Pérou, à 2 792 m
-              d'altitude. Elle se trouve au point de jonction de la vallée de
-              l'Urubamba et d'un ravin latéral sur la droite.
-              <br />
-
-              <br />Les différents sites archéologiques d'Ollantaytambo
-              renferment des pierres travaillées avec une admirable perfection ;
-              cependant certaines de ces constructions correspondent à une
-              époque très ancienne et bien antérieure à l'histoire des Incas2.
-              Des analyses d’ADN ancien établissent la preuve d'un peuplement
-              humain sur ce site au cours de la période 600 à 400 av. J.-C.
+              Les géoglyphes de Nazca (ou Nasca), appelés communément lignes de
+              Nazca, sont de grandes figures tracées sur le sol, souvent
+              d'animaux stylisés, parfois de simples lignes longues de plusieurs
+              kilomètres, visibles dans le désert de Nazca au sud du Pérou. Le
+              sol sur lequel se dessinent ces géoglyphes est couvert de cailloux
+              que l'oxyde de fer colore en rouge. En les ôtant, les Nazcas ont
+              fait apparaître un sol gypseux grisâtre, découpant ainsi les
+              contours des figures qu'ils traçaient. <br />
+              <br />Découverts en 1927, ces géoglyphes sont le fait de la
+              civilisation Nazca, une culture pré-inca qui se développa entre
+              300 av. J.-C. et 800 de notre ère. Ils ont été réalisés pour la
+              plupart entre -200 et 6001. Lignes et géoglyphes sont inscrits,
+              sous la désignation « Lignes et géoglyphes au Nasca et Palpa »,
+              sur la liste du patrimoine mondial de l’Unesco depuis 19942.
             </p>
+
             <div class="mb-3">
               <stars value="4" :disabled="true"></stars>
             </div>
@@ -68,35 +65,18 @@
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point2"
-                  >Précédent</a
-                >
-              </li>
-              <li class="page-item"><a class="page-link">...</a></li>
-              <li class="page-item"><a class="page-link">3</a></li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point4"
-                  >4</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point2"> Précédent </router-link>
               </li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point5"
-                  >5</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point1"> 1 </router-link>
               </li>
-              <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point4"
-                  >Suivant</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point2"> 2 </router-link>
+              </li>
+               <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 3 </a>  </li>
+              <li class="page-item"><a class="page-link" >...</a></li>
+              <li class="page-item">
+               <router-link class="page-link" to="/app/piaf/Point4"> Suivant </router-link>
               </li>
             </ul>
           </nav>
@@ -122,11 +102,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [-13.255845, -72.2663165],
-      center: { lat: -13.255845, lng: -72.2663165 },
+      coords: [-14.8277203, -74.9370624],
+      center: { lat: -14.8277203, lng: -74.9370624 },
       markers: [
         {
-          position: { lat: -13.255845, lng: -72.2663165 },
+          position: { lat: -14.8277203, lng: -74.9370624 },
         },
       ],
     };
@@ -134,7 +114,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Ollantaytambo</h1>
+        <h1 class="red">Nazca </h1>
         <p>I am here: ${this.coords}</p>
       `;
     },
@@ -146,4 +126,3 @@ export default {
   },
 };
 </script>
-

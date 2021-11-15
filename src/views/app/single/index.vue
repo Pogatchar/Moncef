@@ -1,11 +1,6 @@
 <template>
 <div>
-  <b-row>
-    <b-colxx xxs="12">
-      <piaf-breadcrumb :heading="$t('menu.single')"/>
-       
-    </b-colxx>
-  </b-row>
+  
   <b-row>
     <b-colxx xxs="12">
          <b-colxx xxs="12" xl="12" class="col-left">

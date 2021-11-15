@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/machu pichu.jpg"
+            src="/assets/img/Globe/ollantaytambo.jpg"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,29 +18,32 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Machu Picchu (du quechua machu : vieille, et pikchu : montagne,
-              sommet)N 1 est une ancienne cité inca du xve siècle au Pérou,
-              perchée sur un promontoire rocheux qui unit les monts Machu Picchu
-              et Huayna Picchu (« le Jeune Pic » en quechua) sur le versant
-              oriental des Andes centrales. Son nom aurait été Pikchu ou Picho.
-              <br />
-              <br />Selon des documents du xvie siècle, trouvés par
-              l'archéologue américain Hiram Bingham, professeur assistant
-              d'histoire de l'Amérique latine à l’université Yale, Machu Picchu
-              aurait dû être une des résidences de l’empereur Pachacútec.
-              Cependant, quelques-unes des plus grandes constructions et le
-              caractère cérémonial de la principale voie d’accès au llaqta
-              démontreraient que le lieu fut utilisé comme un sanctuaire
-              religieux2. Les deux usages ne s’excluent pas forcément. En
-              revanche, les experts ont écarté l’idée d’un ouvrage militaire.
-            </p>
+              Ollantaytambo est une forteresse inca dont le nom signifie
+              l'auberge d'Ollantay, du nom d'un guerrier. Elle fut le siège de
+              combats acharnés entre Incas et Espagnols, Manco Inca s'y
+              réfugiant pour tenter de fédérer la résistance inca après la chute
+              de Cuzco.
 
+              <br />
+              Elle est située à 75 km au nord-ouest de Cuzco au Pérou, à 2 792 m
+              d'altitude. Elle se trouve au point de jonction de la vallée de
+              l'Urubamba et d'un ravin latéral sur la droite.
+              <br />
+
+              <br />Les différents sites archéologiques d'Ollantaytambo
+              renferment des pierres travaillées avec une admirable perfection ;
+              cependant certaines de ces constructions correspondent à une
+              époque très ancienne et bien antérieure à l'histoire des Incas2.
+              Des analyses d’ADN ancien établissent la preuve d'un peuplement
+              humain sur ce site au cours de la période 600 à 400 av. J.-C.
+            </p>
             <div class="mb-3">
               <stars value="4" :disabled="true"></stars>
             </div>
           </b-card-body>
         </b-card>
       </b-colxx>
+
       <b-colxx xxs="12" xl="6" class="col-right">
         <b-card :title="$t('maps.yandex')" class="mb-4">
           <yandex-map
@@ -64,36 +67,20 @@
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
+                <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point3"> Précédent </router-link>
+              </li>
+              <li class="page-item"><a class="page-link">...</a></li>
+              <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 4 </a>  </li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point3"
-                  >Précédent</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point5"> 5 </router-link>
+              </li>
+              <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point6"> 6 </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point3"
-                  >3</a
-                >
-              </li>
-              <li class="page-item"><a class="page-link">4</a></li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point5"
-                  >5</a
-                >
-              </li>
-              <li class="page-item"><a class="page-link">...</a></li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point5"
-                  >Suivant</a
-                >
+               <router-link class="page-link" to="/app/piaf/Point5"> Suivant </router-link>
               </li>
             </ul>
           </nav>
@@ -102,6 +89,7 @@
     </b-row>
   </div>
 </template>
+
 
 <script>
 import vue from "vue";
@@ -118,11 +106,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [-13.164422, -72.5450851],
-      center: { lat: -13.164422, lng: -72.5450851 },
+      coords: [-13.255845, -72.2663165],
+      center: { lat: -13.255845, lng: -72.2663165 },
       markers: [
         {
-          position: { lat: -13.164422, lng: -72.5450851 },
+          position: { lat: -13.255845, lng: -72.2663165 },
         },
       ],
     };
@@ -130,7 +118,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Machu Picchu</h1>
+        <h1 class="red">Ollantaytambo</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },
@@ -142,5 +130,4 @@ export default {
   },
 };
 </script>
-
 

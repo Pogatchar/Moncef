@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/khajuraho.jpg"
+            src="/assets/img/Globe/mohenjodaro.jpg"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,33 +18,19 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Khajurâho (hindi : खजुराहो, « Khadjouraho ») est un village du
-              Madhya Pradesh en Inde. Avant sa destruction, c'était l'une des
-              capitales de la dynastie des Chandela qui, entre le ixe et xie
-              siècles gouvernait un large royaume englobant presque la totalité
-              du Madhya-Pradesh. Site touristique très visité, sinon le plus
-              visité, de toute l'Inde. Il figure au patrimoine mondial de
-              l'UNESCO depuis 1986.
-
+              Mohenjo-daro — littéralement le mont des Morts, un nom qu'il
+              partage avec Lothal —, est un site important de la civilisation de
+              la vallée de l'Indus. On y trouve les vestiges d'une des plus
+              grandes cités de l'âge du bronze indien. Il est situé au Pakistan
+              à 300 km au nord-nord-est de Karâchi.
               <br />
-              <br />Il compte encore 22 grands temples des xe et xie siècles qui
-              ont été très largement préservés des destructions les plus graves
-              au moment de la conquête islamique et au cours des siècles qui ont
-              suivi. La renommée de cet ensemble exceptionnel tient aussi à des
-              scènes de maithuna des couples d'amoureux et à une multitude
-              d'apsaras, êtres célestes ayant l'apparence de jolies femmes aux
-              formes généreuses et aux attitudes pleines de charme, qui couvrent
-              certaines parties des espaces dédiés à la sculpture figurative sur
-              les faces externes des grands temples et bien visibles de tous.
-              <br />
-              Ces temples sont célèbres pour les nombreuses scènes érotiques de
-              couples en pleine action, accompagnés et encadrés d'ailleurs,
-              chaque fois, par deux autres acteurs. Ces « tableaux » sont comme
-              noyés dans un immense « bandeau » de figures gracieuses, bandeau
-              qui couvre une grande partie des édifices, sur trois niveaux ou
-              trois registres. Une gracieuse souplesse anime les innombrables
-              figures qui semblent tapisser les murs, dès l'extérieur mais on
-              les trouve aussi à l'intérieur des temples.
+              <br />Ayant subi peu de dégradations modernes, son état de
+              conservation est meilleur que celui d'Harappâ, et par suite c'est
+              une importante source d'informations sur la civilisation à
+              laquelle la ville appartenait. Elle a été construite durant le
+              IIIe millénaire av. J.‑C. et a été abandonnée à la fin du xviiie
+              siècle av. J.-C., vraisemblablement en raison d'un changement du
+              cours du fleuve Indus.
             </p>
 
             <div class="mb-3">
@@ -76,36 +62,20 @@
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point13"
-                  >Précédent</a
-                >
+               <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point13"> Précédent </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point12"
-                  >12</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point13"> 13 </router-link>
               </li>
+               <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 14 </a>  </li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point13"
-                  >13</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point15"> 15 </router-link>
               </li>
-              <li class="page-item"><a class="page-link">14</a></li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point15"
-                  >Suivant</a
-                >
+               <router-link class="page-link" to="/app/piaf/Point15"> Suivant </router-link>
               </li>
             </ul>
           </nav>
@@ -116,6 +86,7 @@
 </template>
 
 
+ 
 <script>
 import vue from "vue";
 import ymapPlugin from "vue-yandex-maps";
@@ -131,11 +102,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [24.8515132, 79.9259786],
-      center: { lat: 24.8515132, lng: 79.9259786 },
+      coords: [27.321657, 68.1365933],
+      center: { lat: 27.321657, lng: 68.1365933 },
       markers: [
         {
-          position: { lat: 24.8515132, lng: 79.9259786 },
+          position: { lat: 27.321657, lng: 68.1365933 },
         },
       ],
     };
@@ -143,7 +114,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Khajurâho</h1>
+        <h1 class="red">Mohenjo-daro</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },

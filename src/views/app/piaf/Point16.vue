@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/Sukhothai.jpg"
+            src="/assets/img/Globe/pyay.png"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,40 +18,25 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Sukhothaï (ou Sukothaï) est la première capitale du Siam
-              (Thaïlande) fondée en 1238 et mettant fin au règne khmer d'Angkor
-              Wat. Sukhothaï a été inscrite en 1991 au patrimoine mondial de
-              l'humanité1,2. Elle est plus célèbre pour son art que pour ses
-              réalisations politiques.
-              <br />
-
-              Sukhothaï fut la capitale du premier royaume thaïlandais suzerain
-              sur le bassin du fleuve Chao Phraya, à l'ouest sur la baie du
-              Bengale et sur la péninsule entière. Ce royaume, après s'être
-              affranchi de la tutelle khmère, parvint à préserver son
-              indépendance de 1250 jusqu'au xve siècle. En 1378, Sukhothaï
-              devint tributaire de l'État d'Ayutthaya.
-              <br />
-              <br />À la fin du xiiie siècle, dans les contrées voisines, les
-              Mongols attaquent le Viêt Nam et l'Empire Khmer et saccagent la
-              magnifique cité birmane de Pagan (1287). Sukhotaï se déclare leur
-              vassale et profite de la situation. Ramkhamhaeng, dit « Rama le
-              Fort », monarque respecté pour son équité et sa sagesse, la porte
-              à son apogée entre 1275 et 1317. L'original de sa stèle, portant
-              les plus anciennes inscriptions en alphabet thaï, se trouve au
-              musée de Bangkok.
+              Pyay est l'une des nombreuses anciennes capitales de Birmanie,
+              Pyay (prononcé ‘Pyee’ et connu à l'époque coloniale sous le nom de
+              *Prome* est une ville riveraine calme de stupa Irrawaddy, environ
+              290 kilomètres au nord de Yangon. A quelques kilomètres de la
+              vieille ville de Prome se trouve le village de Hawmza, site de
+              l'ancienne capitale du royaume pyu de Sri Ksetra (viie au xie
+              siècle). La ville nouvelle fut fondée par les britanniques à la
+              fin du xixe siècle, pour servir de port fluvial intermédiaire
+              entre la Haute et la Basse Birmanie.
 
               <br />
-              Située à environ 450 kilomètres au nord de Bangkok, l'immense cité
-              de Sukhothaï est aujourd'hui en ruine. Le palais en bois de ses
-              rois a disparu. Toutefois, la ville possède encore de nombreux
-              vestiges de temples, construits en latérite et en brique. La
-              plupart des édifices qui ont été découverts, et pour partie
-              relevés, se trouvent à l'intérieur d'un rempart renforcé de
-              douves. Mais de nombreux autres bâtiments, disséminés dans les
-              rizières environnantes, attendent d'être dégagés de l'enveloppe de
-              terre qui les recouvre.
-              <br />
+              <br />Ajouté à la liste du patrimoine mondial de l'UNESCO en 2014,
+              le site est centré sur les vestiges du palais royal et, même si il
+              n'y a pas beaucoup de vestiges de la ville d'origine, il y a un
+              certain nombre de tombes, des palais, des pagodes et autres sites
+              religieux à explorer - y compris la pagode énorme, cylindrique,
+              briques BawBawGyi, qui est dit être le plus ancien monument
+              bouddhiste en Birmanie; la pagode de la grotte Rahanta; le
+              monument Lay MyetHna; et le cimetière royal.
             </p>
 
             <div class="mb-3">
@@ -83,36 +68,20 @@
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
+               <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point15"> Précédent </router-link>
+              </li>
+              <li class="page-item"><a class="page-link">...</a></li>
+               <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 16 </a>  </li>>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point15"
-                  >Précédent</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point17"> 17 </router-link>
+              </li>
+              <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point18"> 18 </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point15"
-                  >15</a
-                >
-              </li>
-              <li class="page-item"><a class="page-link">16</a></li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point17"
-                  >17</a
-                >
-              </li>
-              <li class="page-item"><a class="page-link">...</a></li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point17"
-                  >Suivant</a
-                >
+               <router-link class="page-link" to="/app/piaf/Point17"> Suivant </router-link>
               </li>
             </ul>
           </nav>
@@ -121,6 +90,7 @@
     </b-row>
   </div>
 </template>
+
 
 
 <script>
@@ -138,11 +108,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [17.1446985, 99.4375845],
-      center: { lat: 17.1446985, lng: 99.4375845 },
+      coords: [18.816667, 95.216667],
+      center: { lat: 18.816667, lng: 95.216667 },
       markers: [
         {
-          position: { lat: 17.1446985, lng: 99.4375845 },
+          position: { lat: 18.816667, lng: 95.216667 },
         },
       ],
     };
@@ -150,7 +120,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Sukhothaï</h1>
+        <h1 class="red">Pyay</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },
@@ -162,6 +132,3 @@ export default {
   },
 };
 </script>
-
-
-

@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/siwa.jpg"
+            src="/assets/img/Globe/Tassili_nAjjer_Landsat.jpg"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,27 +18,21 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Le temple d'Amon situé à Siwa se dresse au nord-ouest du rocher
-              d'Aghourmi, l'antique capitale de l'oasis. Son oracle a joué un
-              rôle fondamental dans la conquête de l'Égypte par Alexandre le
-              Grand, qui se rendit à Siwa afin de faire légitimer son pouvoir et
-              son règne en Égypte par l'oracle d'Amon.
+              Le tassili n’Ajjer culmine à 2 158 mètres d'altitude à l'Adrar
+              Afao et émerge en hautes falaises à 1 500 mètres en moyenne
+              au-dessus des ergs de Mourzouq et d'Oubari à l'est et d'Admer dans
+              le Ténéré au sud1. Au nord, ce haut plateau se perd dans les dunes
+              d'Issaouane et de Bourharet.
               <br />
-              <br />Le sanctuaire se situe aux croisements de différentes
-              cultures, notamment Cyrène, l'Égypte et le monde méditerranéen.
-              C'est pourquoi l'identité de la divinité honorée originellement à
-              Siwa est difficile à cerner. Il s'agit probablement d'une variante
-              libyenne d'Amon, honoré dans l'oasis sous forme criocéphale1. Lors
-              de la mainmise des Égyptiens sur l'oasis, ils interprétèrent la
-              divinité comme un variante locale de leur Amon de Thèbes, qui
-              pouvait effectivement être représenté sous forme criocéphale. Dans
-              une stratégie d'expansion vers la mer Méditerranée, la dynastie
-              saïte procède aux aménagements et aux agrandissement d'un temple,
-              probablement déjà construit par des dynastes libyens. Ahmôsis II
-              est probablement le pharaon à l'origine de la construction du
-              temple à la Basse époque. Malgré la destruction, en 1970, des
-              maisons qui le dissimulaient, ce qui reste du temple d'Amon ne
-              permet guère d'imaginer sa splendeur passée.
+              <br />
+
+              Ce haut plateau aride se trouve à plus de 1 000 mètres d'altitude
+              et s'étend sur 50 à 60 km d'est en ouest et 800 km du nord au sud,
+              soit une superficie de près de 120 000 km2. Sur toute sa surface
+              se dressent des formations rocheuses créées par l'érosion,
+              émergeant des dunes de sable, qui évoquent de loin les ruines de
+              villes antiques.
+              <br />
             </p>
 
             <div class="mb-3">
@@ -71,36 +65,20 @@
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point7"
-                  >Précédent</a
-                >
+                <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point4"> Précédent </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point6"
-                  >6</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point4"> 7 </router-link>
               </li>
+               <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 8 </a>  </li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point7"
-                  >7</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point4"> 9 </router-link>
               </li>
-              <li class="page-item"><a class="page-link">8</a></li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point9"
-                  >Suivant</a
-                >
+               <router-link class="page-link" to="/app/piaf/Point4"> Suivant </router-link>
               </li>
             </ul>
           </nav>
@@ -109,7 +87,6 @@
     </b-row>
   </div>
 </template>
-
 
 
 <script>
@@ -127,11 +104,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [29.2034664, 25.5192273],
-      center: { lat: 29.2034664, lng: 25.5192273 },
+      coords: [25.4448, 8.9976],
+      center: { lat: 25.4448, lng: 8.9976 },
       markers: [
         {
-          position: { lat: 29.2034664, lng: 25.5192273 },
+          position: { lat: 25.4448, lng: 8.9976 },
         },
       ],
     };
@@ -139,7 +116,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Siwa</h1>
+        <h1 class="red">Le tassili n’Ajjer</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },
@@ -151,5 +128,3 @@ export default {
   },
 };
 </script>
-
-

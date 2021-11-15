@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/Persepolis.jpg"
+            src="/assets/img/Globe/ur.jpg"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,30 +18,32 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Persépolis (grec ancien Περσέπολις [Persépolis], « la cité perse
-              »), Parsa (𐎱𐎠𐎼𐎿𐎠) en vieux-persan (persan تخت جمشید [Takht-e
-              Jamshid], « le Trône de Djamchid »), était une capitale de
-              l’Empire perse achéménide. Le site se trouve dans la plaine de
-              Marvdasht, au pied de la montagne Kuh-e Rahmat, à environ 75 km au
-              nord-est de la ville de Shiraz, province de Fars, Iran.
-
+              Ur (Our, en sumérien urim), actuellement Tell al-Muqayyar (en
+              arabe : tall al-muqayyar, تل المقير, « la colline poissée/bitumée
+              »), est l'une des plus anciennes et des plus importantes villes de
+              la Mésopotamie antique, dans l'actuel Irak. Elle était alors
+              située sur une des branches de l'Euphrate et proche du Golfe
+              Persique.
               <br />
-              <br />Son édification commence en 521 av. J.-C. sur ordre de
-              Darius Ier. Elle fait partie d’un vaste programme de constructions
-              monumentales visant à souligner l’unité et la diversité de
-              l’Empire perse achéménide, à asseoir la légitimité du pouvoir
-              royal et à montrer la grandeur de son règne. Elle fait appel à des
-              ouvriers et artisans venus de toutes les satrapies de l’empire.
-              L’architecture résulte d’une combinaison originale des styles
-              issus de ces provinces créant ainsi le style architectural perse
-              ébauché à Pasargades, également retrouvé à Suse et Ecbatane. Cette
-              combinaison des savoir-faire marque également les autres arts
-              perses, comme la sculpture ou l’orfèvrerie. La construction de
-              Persépolis se poursuit pendant plus de deux siècles, jusqu’à la
-              conquête de l'empire et la destruction partielle de la cité par
-              Alexandre le Grand en 331 av. J.-C.
+              <br />Ur apparaît comme une des principales et des plus puissantes
+              cités sumériennes du IIIe millénaire av. J.‑C., comme l'illustrent
+              les tombes royales et le riche mobilier funéraire qui y fut
+              exhumé. Durant le xxie siècle av. J.-C. cette ville fut la
+              capitale d'un puissant empire, dirigé par les rois de ce que la
+              tradition mésopotamienne a retenu comme la troisième dynastie
+              d'Ur. Ces derniers édifient des monuments remarquables dans le
+              sanctuaire du grand dieu de la ville, le Dieu-Lune, appelé Nanna
+              en sumérien et Sîn en akkadien. Elle reste une ville importante au
+              début du IIe millénaire av. J.‑C. comme l'attestent les nombreuses
+              découvertes de constructions et de tablettes cunéiformes
+              effectuées pour cette période par les équipes archéologiques
+              dirigées par Leonard Woolley, qui explorèrent ses ruines entre
+              1922 et 1934. Ur demeure une cité assez importante en dépit d'un
+              déclin marqué durant le Ier millénaire av. J.‑C., avant son
+              abandon vers le iiie siècle av. J.-C. Dans la Bible, « Ur des
+              Chaldéens » est présentée comme la ville d'origine du Patriarche
+              Abraham.
             </p>
-
             <div class="mb-3">
               <stars value="4" :disabled="true"></stars>
             </div>
@@ -71,45 +73,28 @@
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point11"
-                  >Précédent</a
-                >
-              </li>
-              <li class="page-item"><a class="page-link">...</a></li>
-              <li class="page-item"><a class="page-link">12</a></li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point13"
-                  >13</a
-                >
-              </li>
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point14"
-                  >14</a
-                >
+               <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point11"> Précédent </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point13"
-                  >Suivant</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point10"> 10 </router-link>
+              </li>
+              <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point11"> 11 </router-link>
+              </li>
+              <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 12 </a>  </li>
+              <li class="page-item"><a class="page-link">...</a></li>
+              <li class="page-item">
+               <router-link class="page-link" to="/app/piaf/Point13"> Suivant </router-link>
               </li>
             </ul>
           </nav>
         </b-card>
       </b-colxx>
-    </b-row>
+    </b-row> 
   </div>
 </template>
-
 
 
 <script>
@@ -127,11 +112,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [29.9351669, 52.8904041],
-      center: { lat: 29.9351669, lng: 52.8904041 },
+      coords: [30.96963156798143, 46.117086875492284],
+      center: { lat: 30.96963156798143, lng: 46.117086875492284 },
       markers: [
         {
-          position: { lat: 29.9351669, lng: 52.8904041 },
+          position: { lat: 30.96963156798143, lng: 46.117086875492284 },
         },
       ],
     };
@@ -139,7 +124,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Persépolis</h1>
+        <h1 class="red">UR</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },
@@ -151,3 +136,4 @@ export default {
   },
 };
 </script>
+

@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/ur.jpg"
+            src="/assets/img/Globe/petra.jfif"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,32 +18,28 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Ur (Our, en sumérien urim), actuellement Tell al-Muqayyar (en
-              arabe : tall al-muqayyar, تل المقير, « la colline poissée/bitumée
-              »), est l'une des plus anciennes et des plus importantes villes de
-              la Mésopotamie antique, dans l'actuel Irak. Elle était alors
-              située sur une des branches de l'Euphrate et proche du Golfe
-              Persique.
+              Pétra (de πέτρα petra, « rocher » en grec ancien (البتراء
+              Al-Butrāʾ en arabe) est une cité nabatéenne située au sud de
+              l'actuelle Jordanie. C'est le pôle touristique majeur de ce pays.
+              Fondée vers la fin du viiie siècle av. J.-C., par les Édomites,
+              elle est ensuite occupée vers le vie siècle av. J.-C. par les
+              Nabatéens qui la font prospérer grâce à sa position sur la route
+              des caravanes transportant l'encens, les épices et d'autres
+              produits précieux entre l'Arabie du Sud, l'Égypte, la Syrie et la
+              Méditerranée.
+
               <br />
-              <br />Ur apparaît comme une des principales et des plus puissantes
-              cités sumériennes du IIIe millénaire av. J.‑C., comme l'illustrent
-              les tombes royales et le riche mobilier funéraire qui y fut
-              exhumé. Durant le xxie siècle av. J.-C. cette ville fut la
-              capitale d'un puissant empire, dirigé par les rois de ce que la
-              tradition mésopotamienne a retenu comme la troisième dynastie
-              d'Ur. Ces derniers édifient des monuments remarquables dans le
-              sanctuaire du grand dieu de la ville, le Dieu-Lune, appelé Nanna
-              en sumérien et Sîn en akkadien. Elle reste une ville importante au
-              début du IIe millénaire av. J.‑C. comme l'attestent les nombreuses
-              découvertes de constructions et de tablettes cunéiformes
-              effectuées pour cette période par les équipes archéologiques
-              dirigées par Leonard Woolley, qui explorèrent ses ruines entre
-              1922 et 1934. Ur demeure une cité assez importante en dépit d'un
-              déclin marqué durant le Ier millénaire av. J.‑C., avant son
-              abandon vers le iiie siècle av. J.-C. Dans la Bible, « Ur des
-              Chaldéens » est présentée comme la ville d'origine du Patriarche
-              Abraham.
+              <br />Pétra est un site localisé dans un cirque rocheux structuré
+              par plusieurs failles creusées par des wadis, qui constituent les
+              principales voies de communication. L'axe principal est le wadi
+              Mousa, qui traverse le site d'est en ouest, d'abord dans la gorge
+              du Sîq (« le fossé ») située à l'est, dont l'entrée, précédée par
+              les « tombeaux Djinns », était surmontée d'une grande arche
+              aujourd'hui effondrée. Ce défilé, traversant le massif du Khubtha,
+              constituait la voie d'accès principale pour parvenir à Pétra, et
+              avait été dallé dans l'Antiquité6.
             </p>
+
             <div class="mb-3">
               <stars value="4" :disabled="true"></stars>
             </div>
@@ -73,42 +69,26 @@
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point10"
-                  >Précédent</a
-                >
+               <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point10"> Précédent </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point9"
-                  >9</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point10"> 10 </router-link>
               </li>
+              <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 11 </a>  </li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point10"
-                  >10</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point12"> 12 </router-link>
               </li>
-              <li class="page-item"><a class="page-link">11</a></li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point12"
-                  >Suivant</a
-                >
+               <router-link class="page-link" to="/app/piaf/Point12"> Suivant </router-link>
               </li>
             </ul>
           </nav>
         </b-card>
       </b-colxx>
-    </b-row> 
+    </b-row>
   </div>
 </template>
 
@@ -128,11 +108,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [30.96963156798143, 46.117086875492284],
-      center: { lat: 30.96963156798143, lng: 46.117086875492284 },
+      coords: [30.3497724, 35.3764846],
+      center: { lat: 30.3497724, lng: 35.3764846 },
       markers: [
         {
-          position: { lat: 30.96963156798143, lng: 46.117086875492284 },
+          position: { lat: 30.3497724, lng: 35.3764846 },
         },
       ],
     };
@@ -140,7 +120,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">UR</h1>
+        <h1 class="red">Pétra</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },
@@ -152,4 +132,5 @@ export default {
   },
 };
 </script>
+
 

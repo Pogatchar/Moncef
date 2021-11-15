@@ -9,7 +9,7 @@
             </b-button>
           </div>
           <img
-            src="/assets/img/Globe/sacsayhuaman.jpg"
+            src="/assets/img/Globe/machu pichu.jpg"
             alt="Detail"
             class="card-img-top"
           />
@@ -18,15 +18,21 @@
               {{ $t("pages.description") }}
             </p>
             <p class="mb-3">
-              Saksaywaman1, Saqsaywaman2 ou Sacsayhuamán (mot quechua signifiant
-              « rapace content » ou « repu ») est une forteresse inca ou un
-              centre religieux dédié au Soleil et à d'autres dieux incas, située
-              à deux kilomètres de la ville de Cuzco, au Pérou.
+              Machu Picchu (du quechua machu : vieille, et pikchu : montagne,
+              sommet)N 1 est une ancienne cité inca du xve siècle au Pérou,
+              perchée sur un promontoire rocheux qui unit les monts Machu Picchu
+              et Huayna Picchu (« le Jeune Pic » en quechua) sur le versant
+              oriental des Andes centrales. Son nom aurait été Pikchu ou Picho.
               <br />
-              <br />Construite vers le xiiie siècle, très probablement dans un
-              but défensif ou religieux, la forteresse se trouve à 3 700 m
-              d'altitude. Elle a la forme d'une tête de puma, animal sacré dans
-              la tradition inca.
+              <br />Selon des documents du xvie siècle, trouvés par
+              l'archéologue américain Hiram Bingham, professeur assistant
+              d'histoire de l'Amérique latine à l’université Yale, Machu Picchu
+              aurait dû être une des résidences de l’empereur Pachacútec.
+              Cependant, quelques-unes des plus grandes constructions et le
+              caractère cérémonial de la principale voie d’accès au llaqta
+              démontreraient que le lieu fut utilisé comme un sanctuaire
+              religieux2. Les deux usages ne s’excluent pas forcément. En
+              revanche, les experts ont écarté l’idée d’un ouvrage militaire.
             </p>
 
             <div class="mb-3">
@@ -35,7 +41,6 @@
           </b-card-body>
         </b-card>
       </b-colxx>
-
       <b-colxx xxs="12" xl="6" class="col-right">
         <b-card :title="$t('maps.yandex')" class="mb-4">
           <yandex-map
@@ -59,36 +64,20 @@
         <b-card class="mb-4">
           <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
-              <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point4"
-                  >Précédent</a
-                >
+                <li class="page-item">
+                <router-link class="page-link" to="/app/piaf/Point4"> Précédent </router-link>
               </li>
               <li class="page-item"><a class="page-link">...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point3"
-                  >3</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point4"> 4 </router-link>
               </li>
+               <li class="page-item"><a style="border-width:1px;border-style:dotted;border-color:black;" class="page-link"> 5 </a>  </li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point4"
-                  >4</a
-                >
+                <router-link class="page-link" to="/app/piaf/Point6"> 6 </router-link>
               </li>
-              <li class="page-item"><a class="page-link">5</a></li>
-              <li class="page-item"><a class="page-link">...</a></li>
+              <li class="page-item"><a class="page-link" >...</a></li>
               <li class="page-item">
-                <a
-                  class="page-link"
-                  href="http://192.168.1.82:8080/app/piaf/Point6"
-                  >Suivant</a
-                >
+               <router-link class="page-link" to="/app/piaf/Point6"> Suivant </router-link>
               </li>
             </ul>
           </nav>
@@ -97,7 +86,6 @@
     </b-row>
   </div>
 </template>
-
 
 <script>
 import vue from "vue";
@@ -114,11 +102,11 @@ vue.use(ymapPlugin, yandexOptions);
 export default {
   data() {
     return {
-      coords: [-13.5071665, -72.5450851],
-      center: { lat: -13.5071665, lng: -71.9758383 },
+      coords: [-13.164422, -72.5450851],
+      center: { lat: -13.164422, lng: -72.5450851 },
       markers: [
         {
-          position: { lat: -13.5071665, lng: -71.9758383 },
+          position: { lat: -13.164422, lng: -72.5450851 },
         },
       ],
     };
@@ -126,7 +114,7 @@ export default {
   computed: {
     balloonTemplate() {
       return `
-        <h1 class="red">Sacsayhuamán</h1>
+        <h1 class="red">Machu Picchu</h1>
         <p>I am here: ${this.coords}</p>
       `;
     },
@@ -138,6 +126,5 @@ export default {
   },
 };
 </script>
-
 
 
