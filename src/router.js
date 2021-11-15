@@ -32,7 +32,7 @@ const routes = [
         path: "piaf",
         component: () =>
           import(/* webpackChunkName: "piaf" */ "./views/app/piaf"),
-        redirect: `${adminRoot}/piaf/PointA`,
+        redirect: `${adminRoot}/piaf/Point1`,
         children: [
            
 
