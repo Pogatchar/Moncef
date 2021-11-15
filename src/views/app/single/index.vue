@@ -10,6 +10,7 @@
               <i class="simple-icon-pencil" />
             </b-button>
           </div>
+          
           <img
             src="/assets/img/Globe/Linkedin.png"
             alt="Detail"
